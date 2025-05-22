@@ -1,11 +1,10 @@
-name: Test Email Step
+name: Show Email in Step
 
-on:
-  workflow_dispatch:  # Allows you to trigger it manually
+on: [push]
 
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: 23f1000198@ds.study.iitm.ac.in
-        run: echo "Hello, world from GitHub Actions!"
+        run: echo "Hello from GitHub Actions!"
